@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Remover</title>
+    <style>
+        body{
+            background-image: url("removebg.png");
+            font-family: 'Segue UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+    
+        }
+        h1 {
+            text-decoration: underline;
+            color: #0ce861;
+            text-align: center;
+            color: #00ff62;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #0cec57;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #0cec57;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0cec57;
+            color: #000000;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Remover</h1>
+    <h2><center>Upload an image and click remove button</center></h2>
+    <form action="/remove_bg" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <input type="submit" value="Remove">
+    </form>
+</body>
+</html>
